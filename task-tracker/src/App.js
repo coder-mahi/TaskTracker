@@ -12,7 +12,6 @@ import TaskCalendar from './components/TaskCalendar';
 import TaskReport from './components/TaskReport'; // Import TaskReport
 import { TaskProvider } from './context/TaskContext'; // Import TaskProvider
 import './App.css';
-import Challenge from './components/Challenge';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = React.useState(
@@ -80,10 +79,6 @@ const App = () => {
                             path="*"
                             element={isLoggedIn ? <Navigate to="/home" /> : <Navigate to="/defaultpage" />}
                         />
-    <Route
-    path="/challenge"
-    element={isLoggedIn ? <Challenge /> : <Navigate to="/defaultpage" />}
-/>
                     </Routes>
                 </div>
             </TaskProvider>
