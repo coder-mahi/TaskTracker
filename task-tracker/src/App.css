@@ -1,0 +1,16 @@
+/* src/css/App.css */
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+}

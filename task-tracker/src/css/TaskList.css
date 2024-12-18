@@ -1,0 +1,85 @@
+/* Task List Container */
+.task-list {
+  padding: 20px;
+  border: 1px solid #28a745;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Task Heading */
+.task-list h2 {
+  margin-bottom: 15px;
+  color: #28a745;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Each task box */
+.task {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for task */
+.task:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Task title styling */
+.task h3 {
+  color: #28a745;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Task description and time text */
+.task p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Verdana', sans-serif;
+}
+
+/* Time stamp styling */
+.task p strong {
+  color: #28a745;
+}
+
+/* Delete button styling */
+.task button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  float: right; /* Align button to the right */
+}
+
+/* Delete button hover effect */
+.task button:hover {
+  background-color: #c82333;
+}
+
+/* Center the task list */
+.task-list {
+  max-width: 700px; /* Increased width slightly */
+  margin: 0 auto;
+}

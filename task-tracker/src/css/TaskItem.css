@@ -1,0 +1,34 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* White background */
+    transition: box-shadow 0.3s;
+}
+
+.task-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-item h3 {
+    font-family: 'Georgia', serif;
+    color: #4CAF50; /* Green title */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

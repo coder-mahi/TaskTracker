@@ -1,0 +1,14 @@
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.home h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark text */
+}
+
+.home p {
+  font-size: 1.5em;
+  color: #555; /* Dark gray text */
+}
