@@ -16,7 +16,7 @@ const TaskList = () => {
             }
 
             try {
-                const response = await fetch('${process.env.BACKEND_URI}/gettasks', {
+                const response = await fetch(`${process.env.BACKEND_URI}/gettasks`, {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${token}`,

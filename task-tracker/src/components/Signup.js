@@ -27,7 +27,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('${process.env.BACKEND_URI}/signup', formData);
+      const response = await axios.post(`${process.env.BACKEND_URI}/signup`, formData);
       setSuccessMessage(response.data.message);
       setErrorMessage('');
 

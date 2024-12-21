@@ -13,7 +13,7 @@ const Profile = () => {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const response = await axios.get('${process.env.BACKEND_URI}/api/user/profile', {
+                const response = await axios.get(`${process.env.BACKEND_URI}/api/user/profile`, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}` // Pass the token in the header
                     }
