@@ -37,7 +37,6 @@ const TaskList = () => {
 
         fetchTasks();
     }, [token]);
-
     const onDelete = async (taskId) => {
         try {
             const response = await fetch(`http://localhost:5000/deletetask/${taskId}`, {

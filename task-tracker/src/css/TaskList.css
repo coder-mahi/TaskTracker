@@ -53,12 +53,10 @@
   font-family: 'Verdana', sans-serif;
 }
 
-/* Time stamp styling */
 .task p strong {
   color: #28a745;
 }
 
-/* Delete button styling */
 .task button {
   background-color: #dc3545;
   color: #fff;
@@ -70,7 +68,7 @@
   font-family: 'Arial', sans-serif;
   transition: background-color 0.3s ease;
   margin-top: 10px;
-  float: right; /* Align button to the right */
+  float: right; 
 }
 
 /* Delete button hover effect */

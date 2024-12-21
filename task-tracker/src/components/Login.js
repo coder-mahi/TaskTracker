@@ -27,15 +27,9 @@ const Login = ({ onLogin }) => { // Accept onLogin as a prop
     try {
       const response = await axios.post('http://localhost:5000/login', formData);
       const { token } = response.data;
-
-      // Store the JWT token in localStorage
       localStorage.setItem('token', token);
       setErrorMessage('');
-
-      // Call the onLogin function to update login status in App.js
       onLogin();
-
-      // Redirect to home page after successful login
       navigate('/home');
     } catch (error) {
       if (error.response) {
