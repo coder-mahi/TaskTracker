@@ -16,7 +16,7 @@ const TaskList = () => {
             }
 
             try {
-                const response = await fetch('http://localhost:5000/gettasks', {
+                const response = await fetch('${process.env.BACKEND_URI}/gettasks', {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ const TaskList = () => {
     }, [token]);
     const onDelete = async (taskId) => {
         try {
-            const response = await fetch(`http://localhost:5000/deletetask/${taskId}`, {
+            const response = await fetch(`${process.env.BACKEND_URI}/deletetask/${taskId}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: `Bearer ${token}`,

@@ -18,7 +18,7 @@ const Home = () => {
       }
 
       try {
-        const response = await axios.get('http://localhost:5000/home', {
+        const response = await axios.get('${process.env.BACKEND_URI}/home', {
           headers: {
             Authorization: token, // Send token in Authorization header
           },

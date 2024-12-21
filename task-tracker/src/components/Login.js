@@ -25,7 +25,7 @@ const Login = ({ onLogin }) => { // Accept onLogin as a prop
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/login', formData);
+      const response = await axios.post('${process.env.BACKEND_URI}/login', formData);
       const { token } = response.data;
       localStorage.setItem('token', token);
       setErrorMessage('');

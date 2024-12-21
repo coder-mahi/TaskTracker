@@ -11,7 +11,7 @@ const TaskManager = () => {
   const fetchTasks = async () => {
     const token = localStorage.getItem('token'); 
     try {
-      const response = await axios.get('http://localhost:5000/tasks', {
+      const response = await axios.get('${process.env.BACKEND_URI}/tasks', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks(response.data);
@@ -23,7 +23,7 @@ const TaskManager = () => {
   const addTask = async (task) => {
     const token = localStorage.getItem('token'); 
     try {
-      await axios.post('http://localhost:5000/addtask', task, {
+      await axios.post('${process.env.BACKEND_URI}/addtask', task, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchTasks();
