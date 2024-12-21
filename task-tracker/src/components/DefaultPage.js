@@ -15,6 +15,7 @@ const DefaultPage = () => {
       </p>
       <p>
         <Link to="/login">Sign In</Link> {/* Link to login */}
+        {console.log(process.env.REACT_APP_BACKEND_URI)}
       </p>
     </div>
   );

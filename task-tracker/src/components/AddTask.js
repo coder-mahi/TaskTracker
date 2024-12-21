@@ -19,7 +19,7 @@ const AddTask = () => {
     const taskData = { title, description, reminderTime: reminder };
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URI}/addtask`, {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URI}/addtask`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -10,7 +10,7 @@ export const TaskProvider = ({ children }) => {
             if (!token) return; // Return if no token found
 
             try {
-                const response = await fetch(`${process.env.BACKEND_URI}/gettasks`, {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URI}/gettasks`, {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${token}`, // Include the token in the headers
@@ -41,7 +41,7 @@ export const TaskProvider = ({ children }) => {
 
         // Optionally, update the task on the server
         try {
-            const response = await fetch(`${process.env.BACKEND_URI}/updatetask/${taskId}`, {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URI}/updatetask/${taskId}`, {
                 method: 'PATCH', // Use PATCH to update the specific task
                 headers: {
                     Authorization: `Bearer ${token}`, // Include the token in the headers

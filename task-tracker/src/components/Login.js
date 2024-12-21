@@ -25,8 +25,8 @@ const Login = ({ onLogin }) => { // Accept onLogin as a prop
     e.preventDefault();
 
     try {
-      console.log(process.env.BACKEND_URI);
-      const response = await axios.post(`${process.env.BACKEND_URI}/login`, formData);
+      console.log(process.env.REACT_APP_BACKEND_URI);
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URI}/login`, formData);
       const { token } = response.data;
       localStorage.setItem('token', token);
       setErrorMessage('');
